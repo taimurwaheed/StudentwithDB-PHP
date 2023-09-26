@@ -1,0 +1,72 @@
+/* Apply styles to the main container */
+.Main-div {
+  border: 2px solid #3498db; /* Border color */
+  border-radius: 5px;
+  padding: 20px; /* Add some padding for better spacing */
+  max-width: 400px; /* Limit the width of the form */
+  margin: 0 auto; /* Center the form horizontally */
+  background-color: #f1f1f1; /* Background color for the form */
+}
+
+/* Style the heading */
+h1 {
+  text-align: center;
+  color: #333; /* Heading text color */
+}
+
+/* Apply styles to input fields and select boxes */
+.div-margin {
+  margin: 15px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px; /* Add spacing between labels and inputs */
+  color: #333; /* Text color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 90%;
+  padding: 10px; /* Add padding for better input spacing */
+  border: 2px solid #ccc; /* Default border color */
+  border-radius: 3px;
+  margin-bottom: 10px; /* Add spacing between input fields */
+  transition: border-color 0.3s; /* Add a smooth transition effect for border color */
+}
+
+/* Style the select box */
+select {
+  appearance: none; /* Remove default dropdown arrow */
+  width: 96%;
+  background: transparent; /* Transparent background for select */
+}
+
+#semester {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid #ccc;
+}
+
+/* Style the submit button */
+#button {
+  width: 96%;
+  padding: 10px;
+  background-color: #3498db; /* Button background color */
+  border: none;
+  color: #fff; /* Button text color */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add a smooth transition effect for button background color */
+}
+
+/* Change input and button styles on focus/hover */
+input:focus,
+select:focus {
+  border-color: #3498db; /* Change border color on focus */
+}
+
+#button:hover {
+  background-color: #2980b9; /* Change button background color on hover */
+}

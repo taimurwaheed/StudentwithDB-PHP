@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insert User Records</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="Main-div">
+      <h1 style="text-align: center">Save your records</h1>
+      <form action="./insert.php" method="post">
+        <div class="div-margin">
+          <label for="name"> Please Enter your name:</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+
+        <div class="div-margin">
+          <label for="email"> Please Enter your Email:</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+
+        <div class="div-margin">
+          <label for="phone"> Please Enter your Phone#:</label>
+          <input type="text" name="phone" id="phone" maxlength="11" />
+        </div>
+
+        <div class="div-margin">
+          <label for="rollNo"> Please Enter your Roll No:</label>
+          <input type="text" name="rollNo" id="rollNo" max="5" />
+        </div>
+        
+        <div class="div-margin">
+          <label for="department"> Please Enter your Department:</label>
+          <!-- <input type="text" name="department" id="department"> -->
+          <select name="dept" id="">
+            <option value="select" disabled selected>Select</option>
+            <option value="SE">SE</option>
+            <option value="CS">CS</option>
+            <option value="IT">IT</option>
+            <option value="AI">AI</option>
+          </select>
+        </div>
+
+        <div class="div-margin">
+          <label for="semester"> Please Enter your Semester:</label>
+          <input type="number" name="semester" id="semester" min="1" max="8" />
+        </div>
+
+        <div class="div-margin">
+          <label for="password"> Please Enter your Password:</label>
+          <input type="password" name="password" id="password" />
+        </div>
+
+        <div class="div-margin center">
+          <input type="submit" id="button" name="button" value="save" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
