@@ -19,11 +19,12 @@
         die("Connection Error".$con->connect_error);
     }
     // $qry = "INSERT INTO Users (name, email, password) VALUES ($name, $email, $password)";
-    $qry = 'INSERT INTO student (Name, Email, Phone, Roll_no, Department, Semester, Password) VALUES ("'.$name.'", "'.$email.'","'.$phone.'","'.$rollNo.'","'.$department.'","'.$semester.'","'.$password.'")';
+    $qry = 'INSERT INTO student (name, email, phone, roll_no, department, semester, password) VALUES ("'.$name.'", "'.$email.'","'.$phone.'","'.$rollNo.'","'.$department.'","'.$semester.'","'.$password.'")';
     
     $result = $con->query($qry);
     if($result){
-        echo "Data has been saved successfully.";
+        // echo "Data has been saved successfully.";
+        header("Location: ./select.php");
     }
     else {
         echo "Data didn't save";

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <title>Sign-in</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="button"] {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+input[type="button"]:hover {
+    background-color: #207cca;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <form action="./signIn.php" method="post">
+            <table>
+                    <tr>
+                        <th colspan="3"><h2>Sign in</h2></th>
+                    </tr>
+                    <tr>
+                        <td><label for="Email">Email</label></td>
+                        <td colspan="2"><input type="email" name="Email" id="Email" placeholder="abc123@example.com"></td>
+                    </tr>
+                    <tr>
+                         <td><label for="Password">Password</label></td>
+                        <td colspan="2"><input type="password" name="Password" id="Password" placeholder="********"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" name="submit "value="Sign in"></td>
+                    </tr>
+                    <tr>
+                        <td><a href="../student/choice.php"><input type="button" name="button"value="Continue without Sign In"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./signUp.html"><input type="button" name="button" value="Go to Sign Up Form"></a></td>
+                    </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
