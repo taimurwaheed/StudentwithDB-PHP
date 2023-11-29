@@ -1,72 +1,290 @@
-/* Apply styles to the main container */
-.Main-div {
-  border: 2px solid #3498db; /* Border color */
-  border-radius: 5px;
-  padding: 20px; /* Add some padding for better spacing */
-  max-width: 400px; /* Limit the width of the form */
-  margin: 0 auto; /* Center the form horizontally */
-  background-color: #f1f1f1; /* Background color for the form */
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-/* Style the heading */
-h1 {
-  text-align: center;
-  color: #333; /* Heading text color */
+a {
+    text-decoration: none;
+    color: #3498db;
 }
 
-/* Apply styles to input fields and select boxes */
+a:hover {
+    color: #207cca;
+}
+
+.center {
+    text-align: center;
+}
+
 .div-margin {
-  margin: 15px 0;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4caf50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 label {
-  display: block;
-  margin-bottom: 5px; /* Add spacing between labels and inputs */
-  color: #333; /* Text color */
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+button {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="file"] {
+    margin-top: 5px;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"],
+input[type="number"],
 select {
-  width: 90%;
-  padding: 10px; /* Add padding for better input spacing */
-  border: 2px solid #ccc; /* Default border color */
-  border-radius: 3px;
-  margin-bottom: 10px; /* Add spacing between input fields */
-  transition: border-color 0.3s; /* Add a smooth transition effect for border color */
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-/* Style the select box */
-select {
-  appearance: none; /* Remove default dropdown arrow */
-  width: 96%;
-  background: transparent; /* Transparent background for select */
+/* Add any additional styling specific to your pages as needed */
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
-#semester {
-    width: 90%;
-    padding: 10px;
-    border: 2px solid #ccc;
+a {
+  text-decoration: none;
+  color: #3498db;
 }
 
-/* Style the submit button */
-#button {
-  width: 96%;
-  padding: 10px;
-  background-color: #3498db; /* Button background color */
-  border: none;
-  color: #fff; /* Button text color */
+a:hover {
+  color: #207cca;
+}
+
+.center {
+  text-align: center;
+}
+
+.div-margin {
+  margin-bottom: 15px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type="submit"],
+button {
+  background-color: #4caf50;
+  color: #fff;
   cursor: pointer;
-  transition: background-color 0.3s; /* Add a smooth transition effect for button background color */
+  border: none;
 }
 
-/* Change input and button styles on focus/hover */
-input:focus,
-select:focus {
-  border-color: #3498db; /* Change border color on focus */
+input[type="submit"]:hover,
+button:hover {
+  background-color: #45a049;
 }
 
-#button:hover {
-  background-color: #2980b9; /* Change button background color on hover */
+input[type="file"] {
+  margin-top: 5px;
 }
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Add any additional styling specific to your pages as needed */
+/* styles.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding: 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input[type="button"] {
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+input[type="button"]:hover {
+  background-color: #207cca;
+}
+
+
+
+
+

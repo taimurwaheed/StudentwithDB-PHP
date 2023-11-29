@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <a href="./student.html">Add New Student</a>
+    <a href="./insertuserform.html">Add New Student</a>
     <table>
         <tr>
             <th>Id</th>
